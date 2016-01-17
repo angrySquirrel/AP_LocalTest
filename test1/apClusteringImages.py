@@ -1,8 +1,12 @@
 #coding:utf-8
 '''
 Created on 2015年12月9日
-
-@author: singleton
+set the image folders ,with images given format as "001_0001.jpg 001_0002.jpg" as groundtruth
+computing the sift features, and calculate the distance between images
+computing the affinity propagation clustering 
+classified images to different clusters
+compute the NMI
+@author: Singleton
 '''
 import os
 import cv2

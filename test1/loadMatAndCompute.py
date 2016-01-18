@@ -40,7 +40,7 @@ d = sio.loadmat(os.path.join(dataPath,'fea2.mat'))
 features = d.get('feat_norm') 
 nameList = d.get('imgNameList')
 # Y = sci.pdist(features, 'euclidean')
-S = skpair.pairwise_distances(features, Y=None, metric='cityblock')
+S = - skpair.pairwise_distances(features, Y=None, metric='cityblock')
 print np.shape(S)
 
 pre = np.median(np.median(S, axis = 0))
